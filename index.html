@@ -5,6 +5,7 @@
 <button id="shorten", onclick=test()>短縮</button>
 <script>
   function test(){
-    alert("テスト");
+    const alias = Math.random().toString(32).substring(2)
+    alert("http://eh.f5.si/" + alias);
   }
 </script>

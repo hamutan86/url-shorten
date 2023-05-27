@@ -5,8 +5,9 @@
 <button id="shorten", onclick=test()>短縮</button>
 <script>
   function test(){
-    const request = new XMLHttpRequest()
+    const request = new XMLHttpRequest();
     const alias = Math.random().toString(32).substring(2)
-    alert("http://eh.f5.si/" + alias);
+    
+    alert("短縮リンクを作成しました。\nhttp://eh.f5.si/" + alias);
   }
 </script>

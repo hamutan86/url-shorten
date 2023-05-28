@@ -11,7 +11,7 @@
       let urlelement = nameText = document.getElementById('url');
       request.open("POST", "https://sheetdb.io/api/v1/pdoq32wumaxm7");
       request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      request.send("url=" + urlelement.value + "\nalias=" + alias);
+      request.send("url=" + urlelement.value + "&alias=" + alias);
       alert("短縮リンクを作成しました。\nhttp://eh.f5.si/" + alias);
     }catch(e){
       alert("エラーが発生しました。\n開発者にお問い合わせください。\n▪開発者\n┗Discord：ハムたん#3859\n▪エラー\n" + e)
